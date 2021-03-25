@@ -23,7 +23,7 @@ int main ()
 		{
 			text[row[i]-1][col[i]+pat-1] = 1;
 		}
-		printf("Text on row %d col %d for %d pixels\n", row[i], col[i], pix[i]);
+		printf("Texture on row %d col %d for %d pixels\n", row[i], col[i], pix[i]);
 	}
 	
 	for(i=0; i<cloth; i++)
