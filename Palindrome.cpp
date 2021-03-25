@@ -1,15 +1,14 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
-#include <iostream>
 int main ()
 {
-	int num, i, left, right, palin, len;
-	char check[8];
-	scanf("%d", &num);
+	int i, left, right, palin = 0, check, value[8];
+	char num[8];
+	scanf("%s", num);
 	
-	for(i=1; i<=num; i++)
+	for(i=atoi(num); i>0; i--)
 	{
-		len = strlen(atoi(num));
+		
 	}
 }
