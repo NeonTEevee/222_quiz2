@@ -5,12 +5,15 @@ int main ()
 	int num, i, j, pos = 1, check, cube = 1;
 	scanf("%d", &num);
 	
-	for(i=1; i<num; i++)
+	for(i=1; i<=num; i++)
 	{
-		for(j=1; j<i; j++)
+		for(j=1; j<=i; j++)
 		{
-			if(pow(j*1.0,3)<=i)
+			if(pow(j*1.0,3)<=i && j>1) {
 				check = pow(j*1.0,3);
+			} else {
+				check = num+1;
+			}
 			printf("Check for %d = %d\n", i, check);
 			if(i%check == 0)
 			{
