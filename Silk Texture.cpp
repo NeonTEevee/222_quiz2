@@ -1,7 +1,7 @@
 #include <stdio.h>
 int main ()
 {
-	int i, j, cloth, num;
+	int i, j, cloth, num, pat;
 	scanf("%d", &cloth);
 	scanf("%d", &num);
 	int row[num], col[num], pix[num];
@@ -19,6 +19,23 @@ int main ()
 	
 	for(i=0; i<num; i++)
 	{
-		text[row[i]][col[i]] = 1;
+		for(pat=pix[i]-1; pat>=0; pat--)
+		{
+			text[row[i]][col[i]+pat] = 1;
+		}
+	}
+	
+	for(i=cloth; i>0; i--)
+	{
+		for(j=0; j<70; j++)
+		{
+			if(text[i][j] == 1)
+			{
+				printf("x");
+			} else {
+				printf("o");
+			}
+		}
+		printf("\n");
 	}
 }
