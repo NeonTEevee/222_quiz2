@@ -14,7 +14,6 @@ int main ()
 			} else {
 				check = num+1;
 			}
-			printf("Check for %d = %d\n", i, check);
 			if(i%check == 0)
 			{
 				cube = 0;
@@ -31,6 +30,6 @@ int main ()
 	{
 		printf("%d", pos);
 	} else {
-		printf("Not Cube Free.");
+		printf("Not Cube Free");
 	}
 }
