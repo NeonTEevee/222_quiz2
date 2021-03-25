@@ -8,7 +8,7 @@ int main ()
 	for(i=0; i<num; i++)
 		scanf("%d %d %d", &row[i], &col[i], &pix[i]);
 	
-	int text[70][cloth];
+	int text[500][70];
 	for(i=0; i<=cloth; i++)
 	{
 		for(j=0; j<=70; j++)
@@ -20,10 +20,7 @@ int main ()
 	for(i=0; i<num; i++)
 	{
 		for(pat=pix[i]-1; pat>=0; pat--)
-		{
 			text[row[i]-1][col[i]+pat-1] = 1;
-		}
-		printf("Texture on row %d col %d for %d pixels\n", row[i], col[i], pix[i]);
 	}
 	
 	for(i=0; i<cloth; i++)
