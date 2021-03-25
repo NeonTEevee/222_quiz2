@@ -21,11 +21,12 @@ int main ()
 	{
 		for(pat=pix[i]-1; pat>=0; pat--)
 		{
-			text[row[i]][col[i]+pat] = 1;
+			text[row[i]-1][col[i]+pat-1] = 1;
 		}
+		printf("Text on row %d col %d for %d pixels\n", row[i], col[i], pix[i]);
 	}
 	
-	for(i=cloth; i>0; i--)
+	for(i=0; i<cloth; i++)
 	{
 		for(j=0; j<70; j++)
 		{
