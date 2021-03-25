@@ -2,8 +2,8 @@
 #include <math.h>
 int main ()
 {
-	int num, i, j, pos = 0, check, cube = 1;
-	scanf("%d", &num);
+	long int num, i, j, pos = 0, check, cube = 1;
+	scanf("%ld", &num);
 	
 	for(i=1; i<=num; i++)
 	{
@@ -28,7 +28,7 @@ int main ()
 	
 	if(cube == 1)
 	{
-		printf("%d", pos);
+		printf("%ld", pos);
 	} else {
 		printf("Not Cube Free");
 	}
